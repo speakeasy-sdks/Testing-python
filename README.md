@@ -50,7 +50,7 @@ req = shared.Pet(
 )
 
 res = s.pet.add_pet_form(req, operations.AddPetFormSecurity(
-    petstore_auth="Bearer YOUR_ACCESS_TOKEN_HERE",
+    petstore_auth="",
 ))
 
 if res.pet is not None:

@@ -51,7 +51,7 @@ s = petstore.Petstore()
 
 
 res = s.store.get_inventory(operations.GetInventorySecurity(
-    api_key="YOUR_API_KEY_HERE",
+    api_key="",
 ))
 
 if res.get_inventory_200_application_json_object is not None:

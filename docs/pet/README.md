@@ -65,7 +65,7 @@ req = shared.Pet(
 )
 
 res = s.pet.add_pet_form(req, operations.AddPetFormSecurity(
-    petstore_auth="Bearer YOUR_ACCESS_TOKEN_HERE",
+    petstore_auth="",
 ))
 
 if res.pet is not None:
@@ -109,7 +109,7 @@ req = shared.Pet(
 )
 
 res = s.pet.add_pet_json(req, operations.AddPetJSONSecurity(
-    petstore_auth="Bearer YOUR_ACCESS_TOKEN_HERE",
+    petstore_auth="",
 ))
 
 if res.pet is not None:
@@ -131,7 +131,7 @@ s = petstore.Petstore()
 req = 'saepe'.encode()
 
 res = s.pet.add_pet_raw(req, operations.AddPetRawSecurity(
-    petstore_auth="Bearer YOUR_ACCESS_TOKEN_HERE",
+    petstore_auth="",
 ))
 
 if res.pet is not None:
@@ -156,7 +156,7 @@ req = operations.DeletePetRequest(
 )
 
 res = s.pet.delete_pet(req, operations.DeletePetSecurity(
-    petstore_auth="Bearer YOUR_ACCESS_TOKEN_HERE",
+    petstore_auth="",
 ))
 
 if res.status_code == 200:
@@ -180,7 +180,7 @@ req = operations.FindPetsByStatusRequest(
 )
 
 res = s.pet.find_pets_by_status(req, operations.FindPetsByStatusSecurity(
-    petstore_auth="Bearer YOUR_ACCESS_TOKEN_HERE",
+    petstore_auth="",
 ))
 
 if res.pets is not None:
@@ -208,7 +208,7 @@ req = operations.FindPetsByTagsRequest(
 )
 
 res = s.pet.find_pets_by_tags(req, operations.FindPetsByTagsSecurity(
-    petstore_auth="Bearer YOUR_ACCESS_TOKEN_HERE",
+    petstore_auth="",
 ))
 
 if res.pets is not None:
@@ -232,7 +232,7 @@ req = operations.GetPetByIDRequest(
 )
 
 res = s.pet.get_pet_by_id(req, operations.GetPetByIDSecurity(
-    api_key="YOUR_API_KEY_HERE",
+    api_key="",
 ))
 
 if res.pet is not None:
@@ -258,7 +258,7 @@ req = operations.UpdatePetWithFormRequest(
 )
 
 res = s.pet.update_pet_with_form(req, operations.UpdatePetWithFormSecurity(
-    petstore_auth="Bearer YOUR_ACCESS_TOKEN_HERE",
+    petstore_auth="",
 ))
 
 if res.status_code == 200:
@@ -306,7 +306,7 @@ req = shared.Pet(
 )
 
 res = s.pet.update_pet_form(req, operations.UpdatePetFormSecurity(
-    petstore_auth="Bearer YOUR_ACCESS_TOKEN_HERE",
+    petstore_auth="",
 ))
 
 if res.pet is not None:
@@ -346,7 +346,7 @@ req = shared.Pet(
 )
 
 res = s.pet.update_pet_json(req, operations.UpdatePetJSONSecurity(
-    petstore_auth="Bearer YOUR_ACCESS_TOKEN_HERE",
+    petstore_auth="",
 ))
 
 if res.pet is not None:
@@ -368,7 +368,7 @@ s = petstore.Petstore()
 req = 'quo'.encode()
 
 res = s.pet.update_pet_raw(req, operations.UpdatePetRawSecurity(
-    petstore_auth="Bearer YOUR_ACCESS_TOKEN_HERE",
+    petstore_auth="",
 ))
 
 if res.pet is not None:
@@ -394,7 +394,7 @@ req = operations.UploadFileRequest(
 )
 
 res = s.pet.upload_file(req, operations.UploadFileSecurity(
-    petstore_auth="Bearer YOUR_ACCESS_TOKEN_HERE",
+    petstore_auth="",
 ))
 
 if res.api_response is not None:
