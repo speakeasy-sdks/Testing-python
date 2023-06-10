@@ -7,16 +7,18 @@ from ..shared import user as shared_user
 from typing import Optional
 
 
+
 @dataclasses.dataclass
 class GetUserByNameRequest:
-    
     username: str = dataclasses.field(metadata={'path_param': { 'field_name': 'username', 'style': 'simple', 'explode': False }})
     r"""The name that needs to be fetched. Use user1 for testing."""
     
 
+
+
+
 @dataclasses.dataclass
 class GetUserByNameResponse:
-    
     content_type: str = dataclasses.field()
     status_code: int = dataclasses.field()
     body: Optional[bytes] = dataclasses.field(default=None)
@@ -24,3 +26,4 @@ class GetUserByNameResponse:
     user: Optional[shared_user.User] = dataclasses.field(default=None)
     r"""successful operation"""
     
+

@@ -17,10 +17,10 @@ class PetStatus(str, Enum):
 
 
 @dataclass_json(undefined=Undefined.EXCLUDE)
+
 @dataclasses.dataclass
 class Pet:
     r"""Create a new pet in the store"""
-    
     name: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('name') }, 'form': { 'field_name': 'name' }})
     photo_urls: list[str] = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('photoUrls') }, 'form': { 'field_name': 'photoUrls' }})
     category: Optional[shared_category.Category] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('category'), 'exclude': lambda f: f is None }, 'form': { 'field_name': 'category', 'json': True }})
@@ -29,3 +29,4 @@ class Pet:
     r"""pet status in the store"""
     tags: Optional[list[shared_tag.Tag]] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('tags'), 'exclude': lambda f: f is None }, 'form': { 'field_name': 'tags', 'json': True }})
     
+

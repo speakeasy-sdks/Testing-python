@@ -7,16 +7,18 @@ from ..shared import order as shared_order
 from typing import Optional
 
 
+
 @dataclasses.dataclass
 class GetOrderByIDRequest:
-    
     order_id: int = dataclasses.field(metadata={'path_param': { 'field_name': 'orderId', 'style': 'simple', 'explode': False }})
     r"""ID of order that needs to be fetched"""
     
 
+
+
+
 @dataclasses.dataclass
 class GetOrderByIDResponse:
-    
     content_type: str = dataclasses.field()
     status_code: int = dataclasses.field()
     body: Optional[bytes] = dataclasses.field(default=None)
@@ -24,3 +26,4 @@ class GetOrderByIDResponse:
     r"""successful operation"""
     raw_response: Optional[requests_http.Response] = dataclasses.field(default=None)
     
+

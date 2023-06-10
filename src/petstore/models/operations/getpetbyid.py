@@ -7,23 +7,27 @@ from ..shared import pet as shared_pet
 from typing import Optional
 
 
+
 @dataclasses.dataclass
 class GetPetByIDSecurity:
-    
     api_key: Optional[str] = dataclasses.field(default=None, metadata={'security': { 'scheme': True, 'type': 'apiKey', 'sub_type': 'header', 'field_name': 'api_key' }})
     petstore_auth: Optional[str] = dataclasses.field(default=None, metadata={'security': { 'scheme': True, 'type': 'oauth2', 'field_name': 'Authorization' }})
     
 
+
+
+
 @dataclasses.dataclass
 class GetPetByIDRequest:
-    
     pet_id: int = dataclasses.field(metadata={'path_param': { 'field_name': 'petId', 'style': 'simple', 'explode': False }})
     r"""ID of pet to return"""
     
 
+
+
+
 @dataclasses.dataclass
 class GetPetByIDResponse:
-    
     content_type: str = dataclasses.field()
     status_code: int = dataclasses.field()
     body: Optional[bytes] = dataclasses.field(default=None)
@@ -31,3 +35,4 @@ class GetPetByIDResponse:
     r"""successful operation"""
     raw_response: Optional[requests_http.Response] = dataclasses.field(default=None)
     
+

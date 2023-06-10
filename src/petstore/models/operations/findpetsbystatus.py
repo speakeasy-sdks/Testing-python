@@ -8,11 +8,13 @@ from enum import Enum
 from typing import Optional
 
 
+
 @dataclasses.dataclass
 class FindPetsByStatusSecurity:
-    
     petstore_auth: str = dataclasses.field(metadata={'security': { 'scheme': True, 'type': 'oauth2', 'field_name': 'Authorization' }})
     
+
+
 class FindPetsByStatusStatus(str, Enum):
     r"""Status values that need to be considered for filter"""
     AVAILABLE = 'available'
@@ -20,16 +22,18 @@ class FindPetsByStatusStatus(str, Enum):
     SOLD = 'sold'
 
 
+
 @dataclasses.dataclass
 class FindPetsByStatusRequest:
-    
     status: Optional[FindPetsByStatusStatus] = dataclasses.field(default=None, metadata={'query_param': { 'field_name': 'status', 'style': 'form', 'explode': True }})
     r"""Status values that need to be considered for filter"""
     
 
+
+
+
 @dataclasses.dataclass
 class FindPetsByStatusResponse:
-    
     content_type: str = dataclasses.field()
     status_code: int = dataclasses.field()
     body: Optional[bytes] = dataclasses.field(default=None)
@@ -37,3 +41,4 @@ class FindPetsByStatusResponse:
     r"""successful operation"""
     raw_response: Optional[requests_http.Response] = dataclasses.field(default=None)
     
+

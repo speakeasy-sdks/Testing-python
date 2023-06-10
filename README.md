@@ -62,43 +62,43 @@ if res.pet is not None:
 ## Available Resources and Operations
 
 
-### [pet](docs/pet/README.md)
+### [pet](docs/sdks/pet/README.md)
 
-* [add_pet_form](docs/pet/README.md#add_pet_form) - Add a new pet to the store
-* [add_pet_json](docs/pet/README.md#add_pet_json) - Add a new pet to the store
-* [add_pet_raw](docs/pet/README.md#add_pet_raw) - Add a new pet to the store
-* [delete_pet](docs/pet/README.md#delete_pet) - Deletes a pet
-* [find_pets_by_status](docs/pet/README.md#find_pets_by_status) - Finds Pets by status
-* [find_pets_by_tags](docs/pet/README.md#find_pets_by_tags) - Finds Pets by tags
-* [get_pet_by_id](docs/pet/README.md#get_pet_by_id) - Find pet by ID
-* [update_pet_with_form](docs/pet/README.md#update_pet_with_form) - Updates a pet in the store with form data
-* [update_pet_form](docs/pet/README.md#update_pet_form) - Update an existing pet
-* [update_pet_json](docs/pet/README.md#update_pet_json) - Update an existing pet
-* [update_pet_raw](docs/pet/README.md#update_pet_raw) - Update an existing pet
-* [upload_file](docs/pet/README.md#upload_file) - uploads an image
+* [add_pet_form](docs/sdks/pet/README.md#add_pet_form) - Add a new pet to the store
+* [add_pet_json](docs/sdks/pet/README.md#add_pet_json) - Add a new pet to the store
+* [add_pet_raw](docs/sdks/pet/README.md#add_pet_raw) - Add a new pet to the store
+* [delete_pet](docs/sdks/pet/README.md#delete_pet) - Deletes a pet
+* [find_pets_by_status](docs/sdks/pet/README.md#find_pets_by_status) - Finds Pets by status
+* [find_pets_by_tags](docs/sdks/pet/README.md#find_pets_by_tags) - Finds Pets by tags
+* [get_pet_by_id](docs/sdks/pet/README.md#get_pet_by_id) - Find pet by ID
+* [update_pet_with_form](docs/sdks/pet/README.md#update_pet_with_form) - Updates a pet in the store with form data
+* [update_pet_form](docs/sdks/pet/README.md#update_pet_form) - Update an existing pet
+* [update_pet_json](docs/sdks/pet/README.md#update_pet_json) - Update an existing pet
+* [update_pet_raw](docs/sdks/pet/README.md#update_pet_raw) - Update an existing pet
+* [upload_file](docs/sdks/pet/README.md#upload_file) - uploads an image
 
-### [store](docs/store/README.md)
+### [store](docs/sdks/store/README.md)
 
-* [delete_order](docs/store/README.md#delete_order) - Delete purchase order by ID
-* [get_inventory](docs/store/README.md#get_inventory) - Returns pet inventories by status
-* [get_order_by_id](docs/store/README.md#get_order_by_id) - Find purchase order by ID
-* [place_order_form](docs/store/README.md#place_order_form) - Place an order for a pet
-* [place_order_json](docs/store/README.md#place_order_json) - Place an order for a pet
-* [place_order_raw](docs/store/README.md#place_order_raw) - Place an order for a pet
+* [delete_order](docs/sdks/store/README.md#delete_order) - Delete purchase order by ID
+* [get_inventory](docs/sdks/store/README.md#get_inventory) - Returns pet inventories by status
+* [get_order_by_id](docs/sdks/store/README.md#get_order_by_id) - Find purchase order by ID
+* [place_order_form](docs/sdks/store/README.md#place_order_form) - Place an order for a pet
+* [place_order_json](docs/sdks/store/README.md#place_order_json) - Place an order for a pet
+* [place_order_raw](docs/sdks/store/README.md#place_order_raw) - Place an order for a pet
 
-### [user](docs/user/README.md)
+### [user](docs/sdks/user/README.md)
 
-* [create_user_form](docs/user/README.md#create_user_form) - Create user
-* [create_user_json](docs/user/README.md#create_user_json) - Create user
-* [create_user_raw](docs/user/README.md#create_user_raw) - Create user
-* [create_users_with_list_input](docs/user/README.md#create_users_with_list_input) - Creates list of users with given input array
-* [delete_user](docs/user/README.md#delete_user) - Delete user
-* [get_user_by_name](docs/user/README.md#get_user_by_name) - Get user by user name
-* [login_user](docs/user/README.md#login_user) - Logs user into the system
-* [logout_user](docs/user/README.md#logout_user) - Logs out current logged in user session
-* [update_user_form](docs/user/README.md#update_user_form) - Update user
-* [update_user_json](docs/user/README.md#update_user_json) - Update user
-* [update_user_raw](docs/user/README.md#update_user_raw) - Update user
+* [create_user_form](docs/sdks/user/README.md#create_user_form) - Create user
+* [create_user_json](docs/sdks/user/README.md#create_user_json) - Create user
+* [create_user_raw](docs/sdks/user/README.md#create_user_raw) - Create user
+* [create_users_with_list_input](docs/sdks/user/README.md#create_users_with_list_input) - Creates list of users with given input array
+* [delete_user](docs/sdks/user/README.md#delete_user) - Delete user
+* [get_user_by_name](docs/sdks/user/README.md#get_user_by_name) - Get user by user name
+* [login_user](docs/sdks/user/README.md#login_user) - Logs user into the system
+* [logout_user](docs/sdks/user/README.md#logout_user) - Logs out current logged in user session
+* [update_user_form](docs/sdks/user/README.md#update_user_form) - Update user
+* [update_user_json](docs/sdks/user/README.md#update_user_json) - Update user
+* [update_user_raw](docs/sdks/user/README.md#update_user_raw) - Update user
 <!-- End SDK Available Operations -->
 
 ### Maturity

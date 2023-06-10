@@ -7,9 +7,9 @@ from ..shared import user as shared_user
 from typing import Optional
 
 
+
 @dataclasses.dataclass
 class CreateUsersWithListInputResponse:
-    
     content_type: str = dataclasses.field()
     status_code: int = dataclasses.field()
     body: Optional[bytes] = dataclasses.field(default=None)
@@ -17,3 +17,4 @@ class CreateUsersWithListInputResponse:
     user: Optional[shared_user.User] = dataclasses.field(default=None)
     r"""Successful operation"""
     
+

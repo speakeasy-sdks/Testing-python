@@ -6,15 +6,17 @@ import requests as requests_http
 from typing import Optional
 
 
+
 @dataclasses.dataclass
 class UpdatePetWithFormSecurity:
-    
     petstore_auth: str = dataclasses.field(metadata={'security': { 'scheme': True, 'type': 'oauth2', 'field_name': 'Authorization' }})
     
 
+
+
+
 @dataclasses.dataclass
 class UpdatePetWithFormRequest:
-    
     pet_id: int = dataclasses.field(metadata={'path_param': { 'field_name': 'petId', 'style': 'simple', 'explode': False }})
     r"""ID of pet that needs to be updated"""
     name: Optional[str] = dataclasses.field(default=None, metadata={'query_param': { 'field_name': 'name', 'style': 'form', 'explode': True }})
@@ -23,10 +25,13 @@ class UpdatePetWithFormRequest:
     r"""Status of pet that needs to be updated"""
     
 
+
+
+
 @dataclasses.dataclass
 class UpdatePetWithFormResponse:
-    
     content_type: str = dataclasses.field()
     status_code: int = dataclasses.field()
     raw_response: Optional[requests_http.Response] = dataclasses.field(default=None)
     
+

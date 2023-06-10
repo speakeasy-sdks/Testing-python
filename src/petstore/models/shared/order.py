@@ -18,9 +18,9 @@ class OrderStatus(str, Enum):
 
 
 @dataclass_json(undefined=Undefined.EXCLUDE)
+
 @dataclasses.dataclass
 class Order:
-    
     complete: Optional[bool] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('complete'), 'exclude': lambda f: f is None }, 'form': { 'field_name': 'complete' }})
     id: Optional[int] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('id'), 'exclude': lambda f: f is None }, 'form': { 'field_name': 'id' }})
     pet_id: Optional[int] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('petId'), 'exclude': lambda f: f is None }, 'form': { 'field_name': 'petId' }})
@@ -29,3 +29,4 @@ class Order:
     status: Optional[OrderStatus] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('status'), 'exclude': lambda f: f is None }, 'form': { 'field_name': 'status' }})
     r"""Order Status"""
     
+

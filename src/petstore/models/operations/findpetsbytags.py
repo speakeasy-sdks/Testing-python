@@ -7,22 +7,26 @@ from ..shared import pet as shared_pet
 from typing import Optional
 
 
+
 @dataclasses.dataclass
 class FindPetsByTagsSecurity:
-    
     petstore_auth: str = dataclasses.field(metadata={'security': { 'scheme': True, 'type': 'oauth2', 'field_name': 'Authorization' }})
     
 
+
+
+
 @dataclasses.dataclass
 class FindPetsByTagsRequest:
-    
     tags: Optional[list[str]] = dataclasses.field(default=None, metadata={'query_param': { 'field_name': 'tags', 'style': 'form', 'explode': True }})
     r"""Tags to filter by"""
     
 
+
+
+
 @dataclasses.dataclass
 class FindPetsByTagsResponse:
-    
     content_type: str = dataclasses.field()
     status_code: int = dataclasses.field()
     body: Optional[bytes] = dataclasses.field(default=None)
@@ -30,3 +34,4 @@ class FindPetsByTagsResponse:
     r"""successful operation"""
     raw_response: Optional[requests_http.Response] = dataclasses.field(default=None)
     
+
